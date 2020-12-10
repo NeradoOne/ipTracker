@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!--  Leaftlet   -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    
+    <!--  G-Fonts  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--  CustomCSS  -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>IP Address Tracker</h1>
+    </header>
+    <main>
+      <div class="card">
+        <form id="search-bar" action="">
+          <input
+            autofocus="autofocus"
+            id="input"
+            placeholder="Search for any IP address or domain"
+            type="text"
+          />
+          <button id="btn">
+            <img src="./images/icon-arrow.svg" alt="GO" />
+          </button>
+        </form>
+
+        <div class="card-output">
+          <h2 class="address">IP Address</h2>
+          <h3 id="address">192.168.122.155</h3>
+          <h2>Location</h2>
+          <h3 id="location"></h3>
+          <h2 id="time">Timezone</h2>
+          <h3>UTC <span id="utc">-05:30</span></h3>
+          <h2>ISP</h2>
+          <h3 id="isp">CANTV</h3>
+        </div>
+      </div>
+      <div id="mapid"></div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Marco De La Flor</a>.
+      </div>
+    </footer>
+
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
